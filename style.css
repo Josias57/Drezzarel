@@ -391,3 +391,25 @@ footer .sociales a {
     transform: scale(1);
   }
 }
+
+/* Ajuste de imagen en el modal de producto */
+#modal-producto .modal-contenido img,
+.modal-producto .modal-contenido img {
+  max-width: 90vw;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  #modal-producto .modal-contenido img,
+  .modal-producto .modal-contenido img {
+    max-width: 98vw;
+    max-height: 40vh;
+  }
+}
