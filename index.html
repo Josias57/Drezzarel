@@ -8,19 +8,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="modal-registro" class="modal hidden">
-  <div class="modal-content">
-    <span class="cerrar" id="cerrar-modal">&times;</span>
-    <h2>Crear una cuenta</h2>
-    <form id="form-registro">
-      <input type="text" id="nombre-registro" placeholder="Nombre completo" required>
-      <input type="email" id="email-registro" placeholder="Correo electrónico" required>
-      <input type="password" id="pass-registro" placeholder="Contraseña" required>
-      <button type="submit">Registrarse</button>
-      <p id="msg-registro"></p>
-    </form>
+  <div id="modal-registro" class="modal hidden">
+    <div class="modal-content">
+      <span class="cerrar" id="cerrar-modal">&times;</span>
+      <h2>Crear una cuenta</h2>
+      <form id="form-registro">
+        <input type="text" id="nombre-registro" placeholder="Nombre completo" required>
+        <input type="email" id="email-registro" placeholder="Correo electrónico" required>
+        <input type="password" id="pass-registro" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+        <p id="msg-registro"></p>
+      </form>
+    </div>
   </div>
-</div>
   <!-- HEADER -->
   <header class="main-header">
     <div class="logo">Drezzarel</div>
@@ -31,7 +31,7 @@
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="#" id="btn-registro">Registrarse</a></li>
-
+        <li><a href="#" id="btn-carrito">Carrito <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
@@ -45,59 +45,58 @@
   </section>
 
   <!-- CATÁLOGO -->
- <!-- CATÁLOGO -->
-<div class="productos" id="catalogo">
-  <div class="producto">
-    <img src="img/1.jpg" alt="Look 1" loading="lazy">
-    <h3>Estilo Urbano Clásico</h3>
-    <a href="#">Ver más</a>
+  <div class="productos" id="catalogo">
+    <div class="producto">
+      <img src="img/1.jpg" alt="Look 1" loading="lazy">
+      <h3>Estilo Urbano Clásico</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/adele-shafiee-iFCccPqshcc-unsplash.jpg" alt="Look 2" loading="lazy">
+      <h3>Minimal Power</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/adele-shafiee-vagr_XT9Cms-unsplash.jpg" alt="Look 3" loading="lazy">
+      <h3>Street Royalty</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/alireza-dolati-OVS3rqXq9gg-unsplash.jpg" alt="Look 4" loading="lazy">
+      <h3>Beige Mood</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/corey-saldana-pIKQbdSzF_k-unsplash.jpg" alt="Look 5" loading="lazy">
+      <h3>Dark Elegance</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/danijel-skabic-BWRXQ-t3jWU-unsplash.jpg" alt="Look 6" loading="lazy">
+      <h3>Retro Oversize</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/gideon-karanja-JFgz1C8KYRQ-unsplash.jpg" alt="Look 7" loading="lazy">
+      <h3>Neutral Street</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg" alt="Look 8" loading="lazy">
+      <h3>Pastel Dream</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/lance-reis--EKIQx3h8Eg-unsplash.jpg" alt="Look 9" loading="lazy">
+      <h3>Black Urban Fit</h3>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="img/lance-reis-BUxBq0GabD0-unsplash.jpg" alt="Look 10" loading="lazy">
+      <h3>Desert Shadow</h3>
+      <a href="#">Ver más</a>
+    </div>
   </div>
-  <div class="producto">
-    <img src="img/adele-shafiee-iFCccPqshcc-unsplash.jpg" alt="Look 2" loading="lazy">
-    <h3>Minimal Power</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/adele-shafiee-vagr_XT9Cms-unsplash.jpg" alt="Look 3" loading="lazy">
-    <h3>Street Royalty</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/alireza-dolati-OVS3rqXq9gg-unsplash.jpg" alt="Look 4" loading="lazy">
-    <h3>Beige Mood</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/corey-saldana-pIKQbdSzF_k-unsplash.jpg" alt="Look 5" loading="lazy">
-    <h3>Dark Elegance</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/danijel-skabic-BWRXQ-t3jWU-unsplash.jpg" alt="Look 6" loading="lazy">
-    <h3>Retro Oversize</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/gideon-karanja-JFgz1C8KYRQ-unsplash.jpg" alt="Look 7" loading="lazy">
-    <h3>Neutral Street</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg" alt="Look 8" loading="lazy">
-    <h3>Pastel Dream</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/lance-reis--EKIQx3h8Eg-unsplash.jpg" alt="Look 9" loading="lazy">
-    <h3>Black Urban Fit</h3>
-    <a href="#">Ver más</a>
-  </div>
-  <div class="producto">
-    <img src="img/lance-reis-BUxBq0GabD0-unsplash.jpg" alt="Look 10" loading="lazy">
-    <h3>Desert Shadow</h3>
-    <a href="#">Ver más</a>
-  </div>
-</div>
 
   <!-- NOSOTROS -->
   <section class="nosotros" id="nosotros">
@@ -121,174 +120,219 @@
   <!-- CONTACTO -->
   <section class="contacto" id="contacto">
     <h2>Contáctanos</h2>
- <form id="contacto-form" action="https://formsubmit.co/98c753ea88ca5d52cd2384df1dc2673e" method="POST">
-  <input type="text" name="nombre" placeholder="Tu nombre" required>
-  <input type="email" name="email" placeholder="Tu correo" required>
-  <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
-
-  <!-- Mensaje de estado -->
-  <p id="form-msg" style="margin-top: 10px; font-weight: bold;"></p>
-
-  <button type="submit">Enviar mensaje</button>
-  <a class="whatsapp-btn" href="https://wa.me/51929201444" target="_blank">Escríbenos por WhatsApp</a>
-
-  <!-- Opcional -->
-  <input type="hidden" name="_captcha" value="false">
-</form>
-
-<!-- Animación de éxito -->
-<div id="mensaje-exito" class="hidden">
-  <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito feliz" style="width: 200px; margin: 20px auto;" />
-  <p>🐾 ¡Mensaje enviado con éxito! Nos vemos pronto en el flow urbano 😎</p>
-</div>
+    <form id="contacto-form" action="https://formsubmit.co/98c753ea88ca5d52cd2384df1dc2673e" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+      <p id="form-msg" style="margin-top: 10px; font-weight: bold;"></p>
+      <button type="submit">Enviar mensaje</button>
+      <a class="whatsapp-btn" href="https://wa.me/51929201444" target="_blank">Escríbenos por WhatsApp</a>
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <div id="mensaje-exito" class="hidden">
+      <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito feliz" style="width: 200px; margin: 20px auto;" />
+      <p>🐾 ¡Mensaje enviado con éxito! Nos vemos pronto en el flow urbano 😎</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
- <footer>
-  <p>&copy; 2025 Drezzarel - Todos los derechos reservados</p>
-  <div class="sociales">
-    <a href="https://web.facebook.com/ar.rojas.221795" target="_blank">Facebook</a>
-    <a href="#" target="_blank">Instagram</a>
-    <a href="#">TikTok</a>
+  <footer>
+    <p>&copy; 2025 Drezzarel - Todos los derechos reservados</p>
+    <div class="sociales">
+      <a href="https://web.facebook.com/ar.rojas.221795" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+  <!-- Modal de producto -->
+  <div class="modal-producto hidden" id="modal-producto">
+    <div class="modal-contenido">
+      <span class="cerrar-modal" id="cerrar-modal-producto" tabindex="0" aria-label="Cerrar">&times;</span>
+      <img id="modal-img" src="" alt="Producto">
+      <h3 id="modal-titulo">Nombre del producto</h3>
+      <p id="modal-desc">Descripción detallada del producto.</p>
+      <p id="modal-precio" class="precio">$0.00</p>
+      <button class="btn-comprar">Comprar</button>
+      <button class="btn-agregar-carrito-modal">Agregar al carrito</button>
+    </div>
   </div>
-</footer>
-<!-- MODAL DE PRODUCTO -->
-<div class="modal-producto hidden" id="modal-producto">
-  <div class="modal-contenido">
-    <span class="cerrar-modal" id="cerrar-modal">&times;</span>
-    <img id="modal-img" src="" alt="Producto">
-    <h3 id="modal-titulo">Nombre del producto</h3>
-    <p id="modal-desc">Descripción detallada del producto.</p>
-    <p id="modal-precio" class="precio">$0.00</p>
-    <button class="btn-comprar">Comprar</button>
-  </div>
-</div>
-<script>
-  const modal = document.getElementById("modal-producto");
-  const modalImg = document.getElementById("modal-img");
-  const modalTitulo = document.getElementById("modal-titulo");
-  const modalDesc = document.getElementById("modal-desc");
-  const modalPrecio = document.getElementById("modal-precio");
-  const cerrarModal = document.getElementById("cerrar-modal");
+  <script>
+    // --- MODAL PRODUCTO ---
+    const modal = document.getElementById("modal-producto");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitulo = document.getElementById("modal-titulo");
+    const modalDesc = document.getElementById("modal-desc");
+    const modalPrecio = document.getElementById("modal-precio");
+    const cerrarModalProducto = document.getElementById("cerrar-modal-producto");
 
-  // Datos de cada producto
-  const productos = [
-    {
-      img: "img/1.jpg",
-      titulo: "Estilo Urbano Clásico",
-      desc: "Look moderno y casual ideal para el día a día con toque elegante.",
-      precio: "$49.99"
-    },
-    {
-      img: "img/adele-shafiee-iFCccPqshcc-unsplash.jpg",
-      titulo: "Minimal Power",
-      desc: "Minimalismo con fuerza, ideal para destacar sin exagerar.",
-      precio: "$44.00"
-    },
-    {
-      img: "img/adele-shafiee-vagr_XT9Cms-unsplash.jpg",
-      titulo: "Street Royalty",
-      desc: "Inspirado en el streetwear con actitud y presencia.",
-      precio: "$52.00"
-    },
-    {
-      img: "img/alireza-dolati-OVS3rqXq9gg-unsplash.jpg",
-      titulo: "Beige Mood",
-      desc: "Estilo limpio, suave y sobrio para días fríos y fashionistas.",
-      precio: "$60.00"
-    },
-    {
-      img: "img/corey-saldana-pIKQbdSzF_k-unsplash.jpg",
-      titulo: "Dark Elegance",
-      desc: "Oscuro, elegante y versátil para cualquier ocasión de noche.",
-      precio: "$59.90"
-    },
-    {
-      img: "img/danijel-skabic-BWRXQ-t3jWU-unsplash.jpg",
-      titulo: "Retro Oversize",
-      desc: "Oversize con vibes retro, ideal para estilo libre y cómodo.",
-      precio: "$40.00"
-    },
-    {
-      img: "img/gideon-karanja-JFgz1C8KYRQ-unsplash.jpg",
-      titulo: "Neutral Street",
-      desc: "Paleta neutra y corte urbano. Equilibrio perfecto.",
-      precio: "$47.00"
-    },
-    {
-      img: "img/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg",
-      titulo: "Pastel Dream",
-      desc: "Dulce y moderno, un toque de color sin perder elegancia.",
-      precio: "$42.00"
-    },
-    {
-      img: "img/lance-reis--EKIQx3h8Eg-unsplash.jpg",
-      titulo: "Black Urban Fit",
-      desc: "Conquista la ciudad con este total black moderno y cómodo.",
-      precio: "$55.00"
-    },
-    {
-      img: "img/lance-reis-BUxBq0GabD0-unsplash.jpg",
-      titulo: "Desert Shadow",
-      desc: "Inspiración desértica en tonos tierra, natural y poderoso.",
-      precio: "$48.00"
+    // Datos de cada producto
+    const productos = [
+      {
+        img: "img/1.jpg",
+        titulo: "Estilo Urbano Clásico",
+        desc: "Look moderno y casual ideal para el día a día con toque elegante.",
+        precio: "$49.99"
+      },
+      {
+        img: "img/adele-shafiee-iFCccPqshcc-unsplash.jpg",
+        titulo: "Minimal Power",
+        desc: "Minimalismo con fuerza, ideal para destacar sin exagerar.",
+        precio: "$44.00"
+      },
+      {
+        img: "img/adele-shafiee-vagr_XT9Cms-unsplash.jpg",
+        titulo: "Street Royalty",
+        desc: "Inspirado en el streetwear con actitud y presencia.",
+        precio: "$52.00"
+      },
+      {
+        img: "img/alireza-dolati-OVS3rqXq9gg-unsplash.jpg",
+        titulo: "Beige Mood",
+        desc: "Estilo limpio, suave y sobrio para días fríos y fashionistas.",
+        precio: "$60.00"
+      },
+      {
+        img: "img/corey-saldana-pIKQbdSzF_k-unsplash.jpg",
+        titulo: "Dark Elegance",
+        desc: "Oscuro, elegante y versátil para cualquier ocasión de noche.",
+        precio: "$59.90"
+      },
+      {
+        img: "img/danijel-skabic-BWRXQ-t3jWU-unsplash.jpg",
+        titulo: "Retro Oversize",
+        desc: "Oversize con vibes retro, ideal para estilo libre y cómodo.",
+        precio: "$40.00"
+      },
+      {
+        img: "img/gideon-karanja-JFgz1C8KYRQ-unsplash.jpg",
+        titulo: "Neutral Street",
+        desc: "Paleta neutra y corte urbano. Equilibrio perfecto.",
+        precio: "$47.00"
+      },
+      {
+        img: "img/katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg",
+        titulo: "Pastel Dream",
+        desc: "Dulce y moderno, un toque de color sin perder elegancia.",
+        precio: "$42.00"
+      },
+      {
+        img: "img/lance-reis--EKIQx3h8Eg-unsplash.jpg",
+        titulo: "Black Urban Fit",
+        desc: "Conquista la ciudad con este total black moderno y cómodo.",
+        precio: "$55.00"
+      },
+      {
+        img: "img/lance-reis-BUxBq0GabD0-unsplash.jpg",
+        titulo: "Desert Shadow",
+        desc: "Inspiración desértica en tonos tierra, natural y poderoso.",
+        precio: "$48.00"
+      }
+    ];
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    let productoActual = 0; // Índice del producto mostrado en el modal
+
+    // Actualiza el contador del carrito
+    function actualizarCarrito() {
+      document.getElementById('cart-count') && (document.getElementById('cart-count').textContent = carrito.length);
+      localStorage.setItem('carrito', JSON.stringify(carrito));
     }
-  ];
 
-  // Asignar acción a cada botón "Ver más"
-  document.querySelectorAll(".producto a").forEach((btn, index) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
+    // Abrir modal desde imagen o "Ver más"
+    document.querySelectorAll('.producto').forEach((productoDiv, index) => {
+      // Imagen
+      productoDiv.querySelector('img').addEventListener('click', (e) => {
+        e.preventDefault();
+        mostrarProductoModal(index);
+      });
+      // "Ver más"
+      productoDiv.querySelector('a').addEventListener('click', (e) => {
+        e.preventDefault();
+        mostrarProductoModal(index);
+      });
+    });
+
+    // Mostrar producto en el modal
+    function mostrarProductoModal(index) {
       const p = productos[index];
+      productoActual = index;
       modalImg.src = p.img;
       modalTitulo.textContent = p.titulo;
       modalDesc.textContent = p.desc;
       modalPrecio.textContent = p.precio;
-      modal.classList.remove("hidden");
+      modal.classList.remove('hidden');
+    }
+
+    // Botón agregar al carrito desde el modal
+    document.querySelector('.btn-agregar-carrito-modal').addEventListener('click', () => {
+      carrito.push(productos[productoActual]);
+      actualizarCarrito();
+      alert('Producto agregado al carrito');
     });
-  });
 
-  // Cerrar modal
-  cerrarModal.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contacto-form");
-    const mensajeExito = document.getElementById("mensaje-exito");
+    // Botón comprar (simulado)
+    document.querySelector('.btn-comprar').addEventListener('click', () => {
+      alert('Gracias por tu compra (simulado)');
+      modal.classList.add('hidden');
+    });
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Evita recarga automática
-
-      const data = new FormData(form);
-
-      fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: {
-          Accept: "application/json"
+    // Navegar productos con flechas
+    window.addEventListener('keydown', (e) => {
+      if (!modal.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight') {
+          productoActual = (productoActual + 1) % productos.length;
+          mostrarProductoModal(productoActual);
         }
-      })
-      .then(response => {
-        if (response.ok) {
-          form.reset(); // Limpia los campos
-          form.style.display = "none"; // Oculta el formulario
-          mensajeExito.classList.remove("hidden"); // Muestra gatito
-
-          setTimeout(() => {
-            window.location.href = "#inicio"; // Redirige a inicio
-          }, 5000);
-        } else {
-          alert("Hubo un error. Intenta nuevamente.");
+        if (e.key === 'ArrowLeft') {
+          productoActual = (productoActual - 1 + productos.length) % productos.length;
+          mostrarProductoModal(productoActual);
         }
-      })
-      .catch(() => {
-        alert("Error de conexión. Intenta más tarde.");
+      }
+    });
+
+    // Cerrar modal con la X, click fuera o ESC
+    cerrarModalProducto.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.classList.add('hidden'); });
+
+    // Inicializa contador carrito al cargar
+    actualizarCarrito();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contacto-form");
+      const mensajeExito = document.getElementById("mensaje-exito");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Evita recarga automática
+
+        const data = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: {
+            Accept: "application/json"
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            form.reset(); // Limpia los campos
+            form.style.display = "none"; // Oculta el formulario
+            mensajeExito.classList.remove("hidden"); // Muestra gatito
+
+            setTimeout(() => {
+              window.location.href = "#inicio"; // Redirige a inicio
+            }, 5000);
+          } else {
+            alert("Hubo un error. Intenta nuevamente.");
+          }
+        })
+        .catch(() => {
+          alert("Error de conexión. Intenta más tarde.");
+        });
       });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
