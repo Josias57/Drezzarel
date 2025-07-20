@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -122,24 +121,26 @@
   <!-- CONTACTO -->
   <section class="contacto" id="contacto">
     <h2>Contáctanos</h2>
-   <form id="contacto-form" action="98c753ea88ca5d52cd2384df1dc2673e" method="POST">
+ <form id="contacto-form" action="https://formsubmit.co/98c753ea88ca5d52cd2384df1dc2673e" method="POST">
   <input type="text" name="nombre" placeholder="Tu nombre" required>
   <input type="email" name="email" placeholder="Tu correo" required>
   <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
-  
-  <!-- Mensaje de estado (validación JS) -->
+
+  <!-- Mensaje de estado -->
   <p id="form-msg" style="margin-top: 10px; font-weight: bold;"></p>
 
-  <!-- Botón de enviar -->
   <button type="submit">Enviar mensaje</button>
-
-  <!-- WhatsApp -->
   <a class="whatsapp-btn" href="https://wa.me/51929201444" target="_blank">Escríbenos por WhatsApp</a>
 
-  <!-- Opcionales de FormSubmit -->
+  <!-- Opcional -->
   <input type="hidden" name="_captcha" value="false">
 </form>
 
+<!-- Animación de éxito -->
+<div id="mensaje-exito" class="hidden">
+  <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito feliz" style="width: 200px; margin: 20px auto;" />
+  <p>🐾 ¡Mensaje enviado con éxito! Nos vemos pronto en el flow urbano 😎</p>
+</div>
   </section>
 
   <!-- FOOTER -->
@@ -252,5 +253,42 @@
     modal.classList.add("hidden");
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contacto-form");
+    const mensajeExito = document.getElementById("mensaje-exito");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Evita recarga automática
+
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json"
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          form.reset(); // Limpia los campos
+          form.style.display = "none"; // Oculta el formulario
+          mensajeExito.classList.remove("hidden"); // Muestra gatito
+
+          setTimeout(() => {
+            window.location.href = "#inicio"; // Redirige a inicio
+          }, 5000);
+        } else {
+          alert("Hubo un error. Intenta nuevamente.");
+        }
+      })
+      .catch(() => {
+        alert("Error de conexión. Intenta más tarde.");
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
